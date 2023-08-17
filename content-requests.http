@@ -1,0 +1,36 @@
+### Find all content
+GET http://localhost:8080/api/content
+
+### Find content by ID
+GET http://localhost:8080/api/content/2
+
+### Create new Content
+POST http://localhost:8080/api/content
+Content-Type: application/json
+
+{
+  "id":2,
+  "title":"First Spring BOOT app",
+  "description":"Created by yayauheny",
+  "status":"IDEA","contentType":"ARTICLE",
+  "createdAt":"2023-08-16T14:01:00.2776787",
+  "updatedAt":null,
+  "url":""
+}
+
+### Update existing Content
+PUT http://localhost:8080/api/content/1
+Content-Type: application/json
+
+{
+  "id":1,
+  "title":"Updated value",
+  "description":"Created by yayauheny",
+  "status":"IN_PROGRESS",
+  "contentType":"ARTICLE",
+  "createdAt":"2023-08-16T14:01:00.2776787",
+  "updatedAt":"2023-08-16T15:17:00.2776787",
+  "url":""
+}
+
+
