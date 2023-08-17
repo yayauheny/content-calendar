@@ -5,6 +5,7 @@ import by.yayauheny.contentcalendar.model.Content;
 import by.yayauheny.contentcalendar.repository.ContentCollectionRepository;
 import by.yayauheny.contentcalendar.repository.ContentRepository;
 import jakarta.validation.Valid;
+import org.springframework.context.annotation.Profile;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,6 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
+//@Profile("prod")
 @RestController
 @RequestMapping("/api/content")
 public class ContentController {
